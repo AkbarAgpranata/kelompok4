@@ -1,38 +1,128 @@
 .App {
   text-align: center;
 }
+/* Navbar styling */
+.Judul{
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.logo1 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 160px; /* Atur lebar gambar sesuai kebutuhan */
+    height: auto; /* Biarkan tinggi gambar disesuaikan secara otomatis */
+    
+}
+nav {
+  background-color: #333;
+  color: #fff;
+  padding: 15px ;
+  padding-bottom: 1.4%;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  margin-top: 30px;
+}
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 30px;
+}
+nav ul li a:hover {
+  color: #f7df1e; /* yellow */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Home Page styling */
+.home-container {
+  text-align: center;
+  padding: 50px;
+}
+.hero-section {
+  background-color: #f7df1e; /* yellow */
+  padding: 50px;
+  border-radius: 10px;
+}
+.hero-section h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.hero-section p {
+  font-size: 20px;
+  margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* About Page styling */
+.about-container {
+  text-align: center;
+  background-color: #f7df1e; /* yellow */
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.about-container h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.about-container p {
+  font-size: 20px;
+  text-align: justify;
+}
+/* Products Page styling */
+.products-container {
+  text-align: center;
+  padding: 50px;
+}
+.products-container h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.product {
+  margin-bottom: 50px;
+}
+.product img {
+  width: 200px;
+  border-radius: 10px;
+}
+.product h3 {
+  font-size: 24px;
+  margin-top: 20px;
+}
+.product p {
+  font-size: 18px;
 }
 
-.App-link {
-  color: #61dafb;
+/* Contact Page styling */
+.social-links{
+  text-align: center;
+  padding: 50px;
+}
+.social-links h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.social-links p {
+  font-size: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* slider */
+.slider-image {
+  width: 15%;
+  height: 15%;
+  display: block;
+  margin: 0 auto; /* Untuk mengatur gambar ke tengah */
+}
+.slick-slide {
+  text-align: center; /* Untuk mengatur konten slide ke tengah */
 }
