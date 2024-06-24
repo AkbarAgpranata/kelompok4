@@ -1,128 +1,357 @@
 .App {
   text-align: center;
 }
-/* Navbar styling */
-.Judul{
-  text-align: center;
-  font-size: 40px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-.logo1 {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    width: 160px; /* Atur lebar gambar sesuai kebutuhan */
-    height: auto; /* Biarkan tinggi gambar disesuaikan secara otomatis */
-    
-}
-nav {
-  background-color: #333;
-  color: #fff;
-  padding: 15px ;
-  padding-bottom: 1.4%;
 
-}
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  text-align: right;
-  margin-top: 30px;
-}
-nav ul li {
-  display: inline;
-  margin: 0 10px;
-}
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 30px;
-}
-nav ul li a:hover {
-  color: #f7df1e; /* yellow */
-}
+
+
 
 /* Home Page styling */
 .home-container {
   text-align: center;
-  padding: 50px;
+  padding: 0; /* Menghilangkan padding pada kontainer utama */
+  margin: 0; /* Menghilangkan margin pada kontainer utama */
 }
-.hero-section {
-  background-color: #f7df1e; /* yellow */
-  padding: 50px;
-  border-radius: 10px;
+
+.top-content {
+  text-align: center;
+  background-image: url('./image/kpmelayu.jpeg'); /* Ganti dengan path gambar background yang sesuai */
+  background-size: cover; /* Membuat gambar menutupi seluruh area */
+  background-position: center; /* Memusatkan gambar */
+  background-repeat: no-repeat; /* Tidak mengulang gambar */
+  color: white; /* Menambahkan warna teks putih agar terlihat di atas background */
 }
-.hero-section h1 {
+
+.hero-section, .slider-section {
+  background-color: #ffd100; /* yellow */
+  padding: 15px;
+
+}
+
+.hero-section h1, .slider-section h2 {
   font-size: 36px;
   margin-bottom: 20px;
 }
-.hero-section p {
+
+.slider-section p {
   font-size: 20px;
+}
+
+
+/* slider */
+.slider-image {
+  width: 80%;
+  height: 80%;
+  display: block;
+  margin: 0 auto; /* Untuk mengatur gambar ke tengah */
+  border-radius: 8px;
+}
+
+.slick-slide {
+  text-align: center; /* Untuk mengatur konten slide ke tengah */
+}
+
+/* Additional styling for logos */
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 20px;
 }
+
+.logo-psht {
+  width: 100px; /* Atur ukuran sesuai kebutuhan */
+  height: auto;
+  margin: 0 20px; /* Memberi jarak antara logo dan judul */
+}
+
+.logo-kpmelayu {
+  width: 150px; /* Atur ukuran sesuai kebutuhan */
+  height: auto;
+  margin: 0 20px; /* Memberi jarak antara logo dan judul */
+}
+
+.main-title {
+  font-family: 'Arial, sans-serif';
+  color: #1b1e23;
+  text-align: center;
+  font-style: italic;
+}
+
+/* Styling for teks */
+.teks {
+  margin-top: 20px;
+  padding: 50px;
+}
+
+.teks-container {
+  justify-content: center;
+}
+
+.teks-title {
+  font-family: 'Arial, sans-serif';
+  text-align: center;
+  font-size: 24px; /* Ukuran default */
+  color: #000; /* Menambahkan warna teks putih */
+  margin-top: 250px;
+  text-shadow: 
+    2px 2px 0 #fff,   /* Kanan bawah */
+    -2px -2px 0 #fff, /* Kiri atas */
+    -2px 2px 0 #fff,  /* Kiri bawah */
+    2px -2px 0 #fff,  /* Kanan atas */
+    2px 0 0 #fff,     /* Kanan */
+    -2px 0 0 #fff,    /* Kiri */
+    0 2px 0 #fff,     /* Bawah */
+    0 -2px 0 #fff;    /* Atas */
+}
+
+.teks-content {
+  font-family: 'Arial, sans-serif';
+  text-align: justify;
+  font-size: 18px; /* Ukuran default */
+  color: #000000; /* Menambahkan warna teks putih */
+  text-shadow: 
+    2px 2px 0 #fff,   /* Kanan bawah */
+    -2px -2px 0 #fff, /* Kiri atas */
+    -2px 2px 0 #fff,  /* Kiri bawah */
+    2px -2px 0 #fff,  /* Kanan atas */
+    2px 0 0 #fff,     /* Kanan */
+    -2px 0 0 #fff,    /* Kiri */
+    0 2px 0 #fff,     /* Bawah */
+    0 -2px 0 #fff;    /* Atas */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .home-container, .top-content {
+    padding: 20px;
+  }
+
+  .hero-section, .slider-section {
+    padding: 20px;
+  }
+
+  .hero-section h1, .slider-section h2 {
+    font-size: 20px;
+  }
+
+  .hero-section p, .slider-section p {
+    font-size: 16px;
+  }
+
+  .title-container {
+    flex-direction: column;
+  }
+
+  .logo-psht  {
+    width: 45px; /* Menyesuaikan ukuran logo pada perangkat kecil */
+    margin-bottom: -55px;
+    margin-left: -270px;
+  }
+
+  .logo-kpmelayu {
+    width: 65px; /* Menyesuaikan ukuran logo pada perangkat kecil */
+    margin-top: -50px;/* Mengatur jarak vertikal antara logo dan judul */
+    margin-right: -270px;
+  }
+
+  .main-title {
+    font-size: 13px;
+  }
+
+  .slider-image {
+    width: 100%;
+  }
+
+  .teks-title {
+    font-size: 20px; /* Ukuran lebih kecil untuk perangkat kecil */
+  }
+
+  .teks-content {
+    font-size: 16px; /* Ukuran lebih kecil untuk perangkat kecil */
+    text-align: justify;
+    margin-left: -40px;
+    margin-right: -40px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* rayon.js */
+.rayon-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Default: 3 kolom */
+  gap: 5px; /* Jarak antar item */
+  
+}
+
+#rayon{
+  background-image: url('./image/bg.jpg');
+  background-size: cover; /* Membuat gambar menutupi seluruh area */
+  background-position: center; /* Memusatkan gambar */
+  background-repeat: no-repeat; /* Tidak mengulang gambar */
+}
+.judulRayon {
+  font-family: 'Arial, sans-serif';
+  font-size: 40px;
+  padding: 50px;
+  margin:auto;
+  color: #000000;
+  text-align: center;
+  font-style: italic;
+  text-shadow: 
+    2px 2px 0 #ffffff,   /* Kanan bawah */
+    -2px -2px 0 #ffffff, /* Kiri atas */
+    -2px 2px 0 #ffffff,  /* Kiri bawah */
+    2px -2px 0 #ffffff,  /* Kanan atas */
+    2px 0 0 #ffffff,     /* Kanan */
+    -2px 0 0 #ffffff,    /* Kiri */
+    0 2px 0 #ffffff,     /* Bawah */
+    0 -2px 0 #ffffff;    /* Atas */
+}
+
+
+@media (max-width: 768px) {
+  .rayon-container {
+    grid-template-columns: repeat(1, 1fr); /* Ubah menjadi 1 kolom untuk layar ≤ 768px */
+  }
+}
+
+.product {
+  background-color: #ffffff;
+  padding: 5px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.product h3 {
+  margin-top: 10px;
+  font-size: 1em;
+}
+
+.product p {
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .judulRayon {
+    font-size: 20px; /* Ukuran lebih kecil untuk perangkat kecil */
+    margin: auto;
+  }
+}
+
+
+
+
+
 
 /* About Page styling */
 .about-container {
   text-align: center;
-  background-color: #f7df1e; /* yellow */
   padding: 20px;
-  border-radius: 10px;
-  margin-top: 5px;
-  margin-left: 30px;
-  margin-right: 30px;
+  background-image: url('./image/bg2.jpg');
+  background-size: cover; /* Membuat gambar menutupi seluruh area */
+  background-position: center; /* Memusatkan gambar */
+  background-repeat: no-repeat; /* Tidak mengulang gambar */
 }
 .about-container h2 {
   font-size: 36px;
   margin-bottom: 20px;
+  font-family: 'Arial, sans-serif';
+  color: #1b1e23;
+  text-align: center;
+  font-style: italic;
 }
 .about-container p {
   font-size: 20px;
   text-align: justify;
 }
-/* Products Page styling */
-.products-container {
-  text-align: center;
-  padding: 50px;
+.sejarah {
+  width: 30%; /* Mengisi lebar kontainer */
+  height: auto; /* Biarkan tinggi otomatis */
+  max-width: 100%; /* Maksimum lebar gambar sesuai dengan lebar kontainer */
+  border-radius: 20px;
 }
-.products-container h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
-}
-.product {
-  margin-bottom: 50px;
-}
-.product img {
-  width: 200px;
-  border-radius: 10px;
-}
-.product h3 {
-  font-size: 24px;
-  margin-top: 20px;
-}
-.product p {
-  font-size: 18px;
+/* Menyesuaikan tampilan untuk layar yang lebih kecil */
+@media screen and (max-width: 768px) {
+  .sejarah {
+    width: 70%; /* Mengisi lebar kontainer */
+    height: auto; /* Biarkan tinggi otomatis */
+    max-width: 100%; /* Maksimum lebar gambar sesuai dengan lebar kontainer */
+  }
+
+  .about-container h2 {
+    font-size: 25px;
+  }
 }
 
+
+
+
+
+
 /* Contact Page styling */
-.social-links{
+.social-links {
   text-align: center;
-  padding: 50px;
+  padding: 20px;
+  background-image: url('./image/bg3.jpg');
+  background-size: cover; /* Membuat gambar menutupi seluruh area */
+  background-position: center; /* Memusatkan gambar */
+  background-repeat: no-repeat; /* Tidak mengulang gambar */
 }
+
 .social-links h2 {
   font-size: 36px;
   margin-bottom: 20px;
-}
-.social-links p {
-  font-size: 20px;
+  font-family: 'Arial, sans-serif';
+  color: #1b1e23;
+  text-align: center;
+  font-style: italic;
 }
 
-/* slider */
-.slider-image {
-  width: 15%;
-  height: 15%;
-  display: block;
-  margin: 0 auto; /* Untuk mengatur gambar ke tengah */
+.social-links p {
+  font-size: 20px;
+  margin-bottom: 10px;
 }
-.slick-slide {
-  text-align: center; /* Untuk mengatur konten slide ke tengah */
+
+.social-links a {
+  color: #333;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.social-links a .icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .social-links h2 {
+    font-size: 22px;
+  }
+}
+
+
+
+
